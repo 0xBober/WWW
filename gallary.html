@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niebiańska Grań</title>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/main_styles.css" type="text/css">
+    <!--Second Styles-->
+    <link rel="stylesheet" href="css/gallary_styles.css" type="text/css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Niebiańska Grań</div>
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="about.html">O Nas</a></li>
+            <li><a href="gallary.html">Galeria</a></li>
+            <li><a href="services.html">Usługi</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="gallary" id="gallary">
+            <div class="content">
+                <h1>Galeria Zdjęć</h1>
+                <div class="gallery">
+                    <div class="main-image">
+                        <img id="currentImage" src="pics/image1.jpg" alt="Main Image">
+                    </div>
+                    <div class="thumbnails">
+                        <img class="thumbnail" src="pics/image1.jpg" alt="Image 1" onclick="changeImage('pics/image1.jpg')">
+                        <img class="thumbnail" src="pics/image2.jpg" alt="Image 2" onclick="changeImage('pics/image2.jpg')">
+                        <img class="thumbnail" src="pics/image3.jpg" alt="Image 3" onclick="changeImage('pics/image3.jpg')">
+                        <img class="thumbnail" src="pics/image4.jpg" alt="Image 4" onclick="changeImage('pics/image4.jpg')">
+                        <img class="thumbnail" src="pics/image5.jpg" alt="Image 5" onclick="changeImage('pics/image5.jpg')">
+                        <img class="thumbnail" src="pics/image6.jpg" alt="Image 6" onclick="changeImage('pics/image6.jpg')">
+                        <img class="thumbnail" src="pics/image7.jpg" alt="Image 7" onclick="changeImage('pics/image7.jpg')">
+                        <img class="thumbnail" src="pics/image8.jpg" alt="Image 8" onclick="changeImage('pics/image8.jpg')">
+                        <img class="thumbnail" src="pics/image9.jpg" alt="Image 9" onclick="changeImage('pics/image9.jpg')">
+                        <img class="thumbnail" src="pics/image10.jpg" alt="Image 10" onclick="changeImage('pics/image10.jpg')">
+                        <img class="thumbnail" src="pics/image11.jpg" alt="Image 11" onclick="changeImage('pics/image11.jpg')">
+                        <img class="thumbnail" src="pics/image12.jpg" alt="Image 12" onclick="changeImage('pics/image12.jpg')">
+                        <img class="thumbnail" src="pics/image13.jpg" alt="Image 13" onclick="changeImage('pics/image13.jpg')">
+                        <img class="thumbnail" src="pics/image14.jpg" alt="Image 14" onclick="changeImage('pics/image14.jpg')">
+                        <img class="thumbnail" src="pics/image15.jpg" alt="Image 15" onclick="changeImage('pics/image15.jpg')">
+                        <img class="thumbnail" src="pics/image16.jpg" alt="Image 16" onclick="changeImage('pics/image16.jpg')">
+                        <img class="thumbnail" src="pics/image17.jpg" alt="Image 17" onclick="changeImage('pics/image17.jpg')">
+                        <img class="thumbnail" src="pics/image18.jpg" alt="Image 18" onclick="changeImage('pics/image18.jpg')">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>Niebiańska Grań</h3>
+            <p>Strona poświęcona turystom i miłośnikom Tatr</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/"><img src="pics/facebook.png" alt="Logo Facebooka"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="pics/instagram.jpg" alt="Logo Instagram"></a></li>
+                <li><a href="https://www.twitter.com/"><img src="pics/twitter.jpg" alt="Logo Twittera"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            &copy; Niebiańska Grań | Designed by Michal Bobrowski
+        </div>
+    </footer>
+    
+    <script src="script/script.js"></script>
+    <script src="script/gallary_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niebiańska Grań</title>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/main_styles.css" type="text/css">
+    <!-- Second Styles -->
+    <link rel="stylesheet" href="css/services_styles.css" type="text/css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Niebiańska Grań</div>
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="about.html">O Nas</a></li>
+            <li><a href="gallary.html">Galeria</a></li>
+            <li><a href="services.html">Usługi</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="services" id="services">
+            <div class="content">
+                <h1>Niebiańska Grań - Kalkulator Ceny</h1><!--Celowo jest tutaj h1 a nie niżej, poto jak strona się zmiejsza responsywnie h1 jest dalej powyżej oba kalkulator oraz article-->
+                <article>
+                    Prosze wybrać ilość osób, ilość nocy oraz datę zameldowania, aby obliczyć koszt pobytu w naszym pensjonacie. Cena jest zależna od ilości osób, ilości nocy oraz daty zameldowania. W okresie poza sezonem obowiązuje niższa cena za nocleg. Natomiast w okresie sezonu obowiązuje wyższa cena za nocleg. Warto również pamiętać, że w okresie sezonu oraz poza sezonowym obowiązuje opłata miejscowa, która jest doliczana do ceny za pobyt. Opłata miejscowa wynosi 2zł za osobę za każdą dobę pobytu. Pieniądze te są przekazywane Urzędowi Miasta Zakopane, które są inwestowane w miasto w postaci remonty dróg, transport miejsci itp. W razie pytań prosimy o kontakt telefoniczny lub mailowy.
+                </article>
+                <div id = "calculator">
+                    <form id="rentForm">
+                        <label for="people"><b>Ilość Osób:</b></label>
+                        <input type="number" id="people" name="people" min="1" required>
+                
+                        <label for="nights"><b>Ilość Nocy</b></label>
+                        <input type="number" id="nights" name="nights" min="1" required>
+                
+                        <label for="date"><b>Wybierz datę zameldowania:</b></label>
+                        <input type="date" id="date" name="date" required>
+                
+                        <button type="button" onclick="calculateCost()">Oblicz</button>
+                    </form>
+                
+                    <h2>Cena za pobyt wynosi: <span id="result"></span></h2>
+                    <h2>Opłata miejscowa: <span id="tax"></span></h2>
+                    <h2>Łączna cena: <span id="total"></span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>Niebiańska Grań</h3>
+            <p>Strona poświęcona turystom i miłośnikom Tatr</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/"><img src="pics/facebook.png" alt="Logo Facebooka"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="pics/instagram.jpg" alt="Logo Instagram"></a></li>
+                <li><a href="https://www.twitter.com/"><img src="pics/twitter.jpg" alt="Logo Twittera"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            &copy; Niebiańska Grań | Designed by Michal Bobrowski
+        </div>
+    </footer>
+    
+    <script src="script/script.js"></script>
+    <script src="script/calculator.js"></script>
+</body>
+</html>
