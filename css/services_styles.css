@@ -1,0 +1,96 @@
+section.services{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    display: flex;
+}
+
+main{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    align-content: center;
+    height: min-content;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+#calculator{
+    width: 45%;
+    display: inline-flexbox;
+    float: left;
+    margin-right: 5%;
+}
+
+section article{
+    display: flex;
+    float: left;
+    width: 45%;
+    text-align: justify;
+    margin-right: 5%;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 0 5% 10px 5%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#button {
+    margin: 0 10% 0 10%;
+    width: 80%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #218838;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    section article {
+        width: 100%;
+        float:inline-start;
+        margin-right: 0;
+    }
+    
+    #calculator {
+        width: 90%;
+        padding-right: 5%;
+        float: inline-end;
+        margin-top: 20px;
+    }
+}
