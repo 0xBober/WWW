@@ -60,7 +60,7 @@ input {
     border-radius: 4px;
 }
 
-#button {
+#FormButton {
     margin: 0 10% 0 10%;
     width: 80%;
     padding: 10px;
@@ -71,7 +71,7 @@ input {
     cursor: pointer;
 }
 
-#button:hover {
+#FormButton:hover {
     background-color: #218838;
 }
 
